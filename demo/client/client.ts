@@ -445,7 +445,7 @@ function runFakeTerminal(): void {
 
 function updateTerminalContainerBackground(): void {
   if (term!.options.allowTransparency) {
-    terminalContainer!.style.background = 'repeating-conic-gradient(#000000 0% 25%, #101010 0% 50%) 50% / 20px 20px';
+    terminalContainer!.style.background = 'repeating-conic-gradient(#3c3c3c 0% 25%, #5a5a5a 0% 50%) 50% / 20px 20px';
   } else {
     terminalContainer!.style.background = term!.options.theme?.background ?? '#000000';
   }
