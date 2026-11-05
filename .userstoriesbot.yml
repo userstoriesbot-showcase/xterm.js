@@ -1,13 +1,5 @@
 # Showcase fork only (never part of an upstream pull request).
+# Lane R dogfood: no app block, so the start is inferred.
 version: 1
-app:
-  install: "npm ci --include=dev && npm run setup && npm run esbuild-demo-client"
-  start: PORT={port} npm start
-  url: http://localhost:{port}
-  readyPath: /
-  runtime: node22
-  env:
-    NODE_ENV: development
 demo:
   maxVideos: 1
-  beforePass: true
